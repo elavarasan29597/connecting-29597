@@ -1,7 +1,0 @@
-.example-spacer {
-    flex: 1 1 auto;
-}
-
-mat-toolbar-row:nth-child(2) {
-    font-size: 12px;
-}

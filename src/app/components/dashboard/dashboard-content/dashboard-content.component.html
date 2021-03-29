@@ -1,0 +1,14 @@
+<mat-drawer-container class="example-container" fullscreen>
+    <mat-drawer mode="side" position="end" [(opened)]="opened" mode="push" fxFlex.xs="100" fxFlex.sm="35" fxFlex.md="25"
+        fxFlex.lg="25">
+        <app-sidebar-menu (sidenavToggle)="toggleSidebar($event)"></app-sidebar-menu>
+    </mat-drawer>
+    <mat-drawer-content fxFlex="100">
+        <app-inner-header (sidenavToggle)="toggleSidebar($event)"></app-inner-header>
+        <app-screen-option></app-screen-option>
+        <div style="height: 30px;"></div>
+        <app-dashboad-timeline></app-dashboad-timeline>
+        <app-dashboad-tabs></app-dashboad-tabs>
+        <app-inner-footer></app-inner-footer>
+    </mat-drawer-content>
+</mat-drawer-container>

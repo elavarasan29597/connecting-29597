@@ -17,9 +17,13 @@
                 <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
             </button>
         </mat-form-field>
-        <button fxHide.sm fxHide.xs mat-raised-button color="accent">Login</button>
+        <a href="./dashboard" fxHide.sm fxHide.xs mat-raised-button color="accent">
+            Login
+        </a>
         <div fxLayout="row" fxLayoutGap="20px" fxHide.md fxHide.lg fxHide.xl>
-            <button fxFlex="70" mat-raised-button color="accent">Login</button>
+            <a href="./dashboard" fxHide.sm fxHide.xs mat-raised-button color="accent">
+                Login
+            </a>
             <button fxFlex="70" mat-raised-button color="accent">Sign Up</button>
         </div>
     </div>
